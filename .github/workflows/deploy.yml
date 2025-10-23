@@ -29,6 +29,6 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftps
-        port: 21
+        port: 990
         local-dir: ./dist/
         server-dir: /domains/dqxthlxgye.cfolks.pl/public_html/
