@@ -22,11 +22,13 @@ jobs:
     - name: Build
       run: npm run build
     
-    - name: Deploy to FTP
+    - - name: Deploy to FTP
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: s58.cyber-folks.pl
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+        protocol: ftps
+        port: 21
         local-dir: ./dist/
         server-dir: /domains/dqxthlxgye.cfolks.pl/public_html/
