@@ -28,7 +28,7 @@ jobs:
         server: s58.cyber-folks.pl
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        protocol: ftps
-        port: 990
+        protocol: ftp
+        port: 21
         local-dir: ./dist/
         server-dir: /domains/dqxthlxgye.cfolks.pl/public_html/
